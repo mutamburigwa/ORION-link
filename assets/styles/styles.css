@@ -1,0 +1,370 @@
+/* Import Acumin Variable Concept */
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    src: url('/assets/fonts/Acumin\ Variable\ Concept.ttf') format('truetype'); /* Update with the actual path */
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Acumin Variable Concept', sans-serif;
+    color: #333;
+}
+
+/* Other styles remain the same */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00AEEF;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #1B0E28;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px; /* Add some padding for spacing */
+    text-align: left; /* Align the text to the right */
+}
+
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1B0E28;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 24px;
+    color: #1B0E28;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    background-color: #00AEEF;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #007BB5;
+}
+
+
+.hubs-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+.hub-tile {
+    background-color: #1B0E28;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hub-tile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hub-tile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hub-tile .cta-button {
+    background-color: #00AEEF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Blog Section */
+#blog-section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#blog-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.blog-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.blog-tile {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.blog-tile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 5px;
+}
+
+.blog-tile h3,
+.blog-tile p,
+.blog-tile .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+.blog-tile h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-tile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-tile .cta-button {
+    background-color: #00AEEF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+}
+
+.blog-tile .cta-button:hover {
+    background-color: #007BB5;
+}
+
+/* Projects Section */
+#projects-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-tile {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.project-tile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 5px;
+}
+
+.project-tile h3,
+.project-tile p,
+.project-tile .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+.project-tile h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-tile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-tile .cta-button {
+    background-color: #00AEEF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    z-index: 2;
+}
+
+.project-tile .cta-button:hover {
+    background-color: #007BB5;
+}
+
+
+footer {
+    background-color: #1B0E28;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .quick-links a {
+    color: #00AEEF;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #00AEEF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+footer .newsletter button:hover {
+    background-color: #007BB5;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo img {
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hubs-overview {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .quick-links a {
+        margin: 0 10px;
+    }
+}
