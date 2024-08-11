@@ -306,3 +306,45 @@ footer {
     }
   }
 }
+.hero-stats {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.stat {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.stat h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.stat p {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+
+@keyframes animateStat {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation: animateStat 1s ease-in-out;
+}
